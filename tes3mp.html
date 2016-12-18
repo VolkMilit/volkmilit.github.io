@@ -1,55 +1,65 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+   
 <html>
 
 <head>
-	
-	<title>Volk_Milit's visit card page</title>
-	
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
+<title>Volk_Milit's visit-page</title>
+<link href="style.css" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 
 <body>
-	<div id="main">		
-		<h1 class="header">Volk_Milit</h1>
-		<div class="header small">(aka Ja'Virr-Dar)</div>
-			
-		<div id="menu">
-			<ul>
-				<li><a href="index.html">home</a></li>
-				<li><a href="https://github.com/VolkMilit">github</a></li>
-				<li><a href="http://return-1.deviantart.com/">deviantart</a></li>
-				<li><a href="https://www.reddit.com/user/javirrdar/">reddit</a></li>
-				<li><a href="https://www.tumblr.com/blog/javirrdar">tumblr</a></li>
-				<li><a href="https://vk.com/volcharamilit">vkontakte</a></li>
-				<li><a href="https://steamcommunity.com/id/javirrdar/">steam</a></li>
-			</ul>
-		</div>
-		
-		<div id="tes3mp">
-			<div class="left">
-				<div class="command_line">$ cd ~/volk_milit/tes3mp/</div><br>
-				TES3MP is a project aiming to add multiplayer<br>
-				functionality to OpenMW, a free and open<br>
-				source recreation of the popular Bethesda<br>
-				Softworks' game "The Elder Scrolls III:<br>
-				Morrowind".<br><br>
-				Check the link below:<br>
-				<a href="https://github.com/TES3MP">source code</a><br>
-				<a href="https://www.reddit.com/r/tes3mp/">(sub)reddit</a><br>
-				<a href="https://steamcommunity.com/groups/mwmulti">steam group</a><br>
-				<a href="https://vk.com/tes3mp">vkontakte group</a><br>
-			</div>
-			<div class="right">
-				<img class="small_img" src="https://pp.vk.me/c627822/v627822144/2ba5a/XZGhmWKW73I.jpg">
-			</div>
-			<br>
-			<iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/3sYTVnWLBYs" frameborder="0" allowfullscreen></iframe>
-		</div>
-		
+	
+<!-- content container -->
+<div id="content">
+	<div id="header" class="center">Volk_Milit <div class="small">(aka Ja'Virr-Dar)</div></div>
+	
+	<div id="menu">
+		<ul>
+			<li><a href="tes3mp.html">tes3mp</a></li>
+			<li><a href="https://github.com/VolkMilit">github</a></li>
+			<li><a href="http://return-1.deviantart.com/">deviantart</a></li>
+			<li><a href="https://www.reddit.com/user/javirrdar/">reddit</a></li>
+			<li><a href="https://www.tumblr.com/blog/javirrdar">tumblr</a></li>
+			<li><a href="https://vk.com/volcharamilit">vkontakte</a></li>
+			<li><a href="https://steamcommunity.com/id/javirrdar/">steam</a></li>
+		</ul>
 	</div>
+	
+	<table><tr>
+		<td class="left">
+				<p class="indent">TES3MP is a project aiming to add multiplayer functionality to OpenMW, a free and open source recreation of the popular Bethesda Softworks' game "The Elder Scrolls III: Morrowind".</p>
+				<p class="indent">We started this project with Stanislav (Koncord) on summer 2016, and, well, I don't belive that project will shoot. But it is! And I very exciting.</p>
+				
+				<p>Check the link below:</p>
+				<ul>
+					<li><a href="https://github.com/TES3MP">source code</a></li>
+					<li><a href="https://www.reddit.com/r/tes3mp/">(sub)reddit</a></li>
+					<li><a href="https://steamcommunity.com/groups/mwmulti">steam group</a></li>
+					<li><a href="https://vk.com/tes3mp">vkontakte group</a></li>
+					<li><a href="https://vk.com/tes3mp">everything you need to now about project</a></li>
+				</ul>
+		</td>
+		<td>
+			<img class="ava_img" src="https://pp.vk.me/c627822/v627822144/2ba5a/XZGhmWKW73I.jpg">
+		</td>
+	</tr></table>
+	
+	<div class="center"><div id="header">Check out this cool gameplay video!</div>Remember, that not all stuff works on this moment, mod still in heavy development.<br><iframe width="560" height="315" src="https://www.youtube.com/embed/3sYTVnWLBYs" frameborder="0" allowfullscreen></iframe></div>
+</div>
+<!-- /content container -->
+
+<div id="footer">&copy; 2016<span id="footer_d"></span> Volk_Milit, <a href='https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode'>CC-NC-SA 3.0</a></div>
+
+<script type="text/javascript">
+	//footer
+	var d = new Date();
+	//dynamically generate current year
+	if( (d.getFullYear() != 2016) || (d.getFullYear < 2016) )
+		document.getElementById("footer_d").innerHTML = "-" + d.getFullYear();
+</script>
+
 </body>
 
 </html>
