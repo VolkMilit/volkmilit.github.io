@@ -81,3 +81,4 @@ p
 table ul{list-style: none; padding-left: 0; margin-top: -10px; line-height: 1.5em;}
 .spoiler {background: #B1B1B1; color: #B1B1B1; padding-left: 5px; padding-right: 5px;}
 .spoiler:hover {color: #000;}
+iframe {margin-top: -60px; margin-bottom: -50px} /*little duck tape for this youtube videos...*/
