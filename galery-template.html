@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+   
+<html>
+
+<head>
+<title>My cool galery</title>
+<link href="../style.css" rel="stylesheet">
+<link href="../galery.css" rel="stylesheet">
+<link rel="icon" href="../icon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+	
+<!-- content container -->
+<div id="content">
+	<div id="header" class="center">Sta<span class="color_blue">G</span><div class="small">Static Galery</div></div>
+	
+	<div id="menu">
+		<ul>
+			<li><a href="../index.html">home</a></li>
+		</ul>
+	</div>
+	
+	<div id="widgetcontent"></div>
+	
+	<div id="hint" class="center">Hint: click to image to return to galery. <span id="full"></span></div>
+	<div id="tmp_img" onclick='javascript:ret();'></div>
+	<div id="control"></div>
+</div>
+<!-- /content container -->
+
+<div id="footer">&copy; 2016<span id="footer_d"></span> Volk_Milit, <a href='https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode'>CC-NC-SA 3.0</a></div>
+
+<script type="text/javascript">
+	var $=function(id) { return document.getElementById(id); }
+	
+	//footer
+	var d = new Date();
+	//dynamically generate current year
+	if( (d.getFullYear() != 2016) || (d.getFullYear < 2016) )
+		$("footer_d").innerHTML = "-" + d.getFullYear();
+		
+	var scroll;
+	
+	function galery(img)
+	{
+		scroll = window.pageYOffset;
+		$("widgetcontent").style.display = "none";
+		$("control").style.display = "none";
+		$("tmp_img").style.display = "block";
+		$("hint").style.display = "block";
+		$("tmp_img").innerHTML = "<img class='galery_resize_img center' src='"+ img +"' alt='" + img + "'>";
+		$("full").innerHTML = "Click <a href='" + img + "' target='_blank'>HERE</a> for FULL size."
+		window.scrollTo(0, 0);
+	}
+	
+	function ret()
+	{
+		$("tmp_img").style.display = "none";
+		$("hint").style.display = "none";
+		$("control").style.display = "block";
+		$("widgetcontent").style.display = "block";
+		window.scrollTo(0, scroll);	
+	}
+</script>
+
+</body>
+
+</html>
