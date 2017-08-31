@@ -1,3 +1,8 @@
+html, body
+{
+	font-family: sans, dejuvu-sans-book;
+}
+
 /* Startpage  Css
 By Dylan Araps */
 #menu ul
@@ -45,16 +50,11 @@ By Dylan Araps */
 
 @media screen and (max-width: 800px){#header{padding-top: 5%;}} /*fix for 800x600 screens*/
 
-#header{font-family: sans, dejuvu-sans-book; font-size: 2em; color: #D64937; padding-bottom: 10px;}
-#header .small{font-family: sans, dejuvu-sans-book; font-size: 0.4em; color: #C4C4C4;}
+#header{font-size: 2em; color: #D64937; padding-bottom: 10px;}
+#header .small{font-size: 0.4em; color: #C4C4C4;}
 #header a{color: #D64937;}
 
-p
-{
-	font-family: sans, dejuvu-sans-book;
-	text-align: justify;
-	line-height: 1.5em;
-}
+p { text-align: justify; line-height: 1.5em; }
 
 .indent{ text-indent: 20px; }
 .quote{ border-left: 2px solid #D64937; padding-left: 8px; }
