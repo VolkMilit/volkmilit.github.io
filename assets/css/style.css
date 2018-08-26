@@ -14,7 +14,7 @@ By Dylan Araps */
 		
 #menu li
 {
-	color: #D64937;
+	color: #FFA500;
 	display: inline-block;
 	font-size: 1.2em;
 	line-height: 1.5;
@@ -28,9 +28,6 @@ By Dylan Araps */
 	text-decoration: none;
 	transition: .2s;
 }
-		
-/*volk's css*/
-#menu a:hover { color: #D64937; }
 
 /***content container***/
 @media screen and (max-width: 1080px){#content{width: 50%;}} /*fix for 1920x1080 screens*/
@@ -43,42 +40,47 @@ By Dylan Araps */
 	background: #fff;
 	padding: 10px;
 }
-#content a{color: #777; text-decoration: none; transition: .2s;}
-#content a:hover{color: #D64937; }
-
+#content a{color: #777; text-decoration: none; transition: 0.3s;}
+#content a:hover{color: #FFA500;}
+#content a img{border: 3px solid #FFFFFF; transition: 0.3s;}
+#content a img:hover{border: 3px solid #FFA500;}
 #content .ava_img{width: 200px;}
 
 @media screen and (max-width: 800px){#header{padding-top: 5%;}} /*fix for 800x600 screens*/
 
-#header{font-size: 2em; color: #D64937; padding-bottom: 10px;}
+#header{font-size: 2em; color: #FFA500; padding-bottom: 10px;}
 #header .small{font-size: 0.4em; color: #C4C4C4;}
-#header a{color: #D64937;}
+#header a{color: #FFA500;}
+#header a:hover{color: #C57F00;}
+
+.smaller {font-size: 0.8em; color: #C4C4C4;}
+
+#table{display: flex;}
+#table .row{margin-left: 20px; width: 200px;}
+#table .row1{margin-right: 10px;}
+#table .row2{margin-left: 10px;}
 
 p { text-align: justify; line-height: 1.5em; }
 
-.indent{ text-indent: 20px; }
-.quote{ border-left: 2px solid #D64937; padding-left: 8px; }
+.quote{ border-left: 2px solid #FFA500; padding-left: 8px; }
 
 /***footer***/
 #footer 
 {
-	background: #D64937; color: #fff;
+	background: #2d2d2d; color: #fff;
 	text-align: center;
 	width: 70%;
 	margin-left: 15%;
 }
 
-#footer a{color: #333; text-decoration: none;}
+#footer a{color: #FFA500; text-decoration: none;}
 #footer a:hover{color: #fff;}
 
 /*****************************/
 .center{text-align: center;}
+.center p{text-align: center;}
 /*elastic images -- makes images resize, when screen small*/
 .center img {max-width: 100%; height: auto; width: auto\9; /* ie8 */}
 .center iframe {max-width: 100%; padding-top: 100px; padding-bottom: 200px;}
 .resize{width: 50%; height: auto;}
-.left{width: 80%;}
-table ul{list-style: none; padding-left: 0; margin-top: -10px; line-height: 1.5em;}
-.spoiler {background: #B1B1B1; color: #B1B1B1; padding-left: 5px; padding-right: 5px;}
-.spoiler:hover {color: #000;}
 iframe {margin-top: -60px; margin-bottom: -50px} /*little duck tape for this youtube videos...*/

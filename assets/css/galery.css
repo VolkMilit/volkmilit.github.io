@@ -15,10 +15,9 @@
 	margin: 10px;
 	display: inline-table;
 }
-#widget:hover{border: 1px solid #D64937;}
 
 #widget a{text-decoration: none; color: #000;}
-#widget a:hover{color: #D64937;}
+#widget a:hover{color: #FFA500;}
 
 #widget img{width: 200px; height: 150px;}
 
@@ -34,6 +33,6 @@
 
 #control { text-align: center; margin: 5px; }
 #control a{ border: 1px solid #000; margin: 3px; padding: 2px; }
-#control a:hover{ border: 1px solid #D64937; color: #D64937; }
+#control a:hover{ border: 1px solid #D64937; color: #FFA500; }
 #control .inactive{ border: 1px solid #DCDCDC; color: #DCDCDC; }
 #control .inactive:hover{ border: 1px solid #DCDCDC; color: #DCDCDC; }
