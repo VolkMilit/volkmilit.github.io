@@ -1,6 +1,7 @@
 html, body
 {
 	font-family: sans, dejuvu-sans-book;
+	height: 96%; /*because fuck css*/
 }
 
 /* Startpage  Css
@@ -30,7 +31,7 @@ By Dylan Araps */
 }
 
 /***content container***/
-@media screen and (max-width: 1080px){#content{width: 50%;}} /*fix for 1920x1080 screens*/
+@media screen and (max-width: 1080px){#content{width: 50%;} .resize{width: 70%;}} /*fix for 1920x1080 screens*/
 
 #content
 {
@@ -39,6 +40,7 @@ By Dylan Araps */
 	padding-top: 10px; 
 	background: #fff;
 	padding: 10px;
+	min-height: 100%;
 }
 #content a{color: #777; text-decoration: none; transition: 0.3s;}
 #content a:hover{color: #FFA500;}
@@ -56,7 +58,8 @@ By Dylan Araps */
 .smaller {font-size: 0.8em; color: #C4C4C4;}
 
 #table{display: flex;}
-#table .row{margin-left: 20px; width: 200px;}
+#table .row01{margin-right: 20px; width: 80%;}
+#table .row02{margin-left: 20px; width: 20%;}
 #table .row1{margin-right: 10px;}
 #table .row2{margin-left: 10px;}
 
@@ -67,10 +70,12 @@ p { text-align: justify; line-height: 1.5em; }
 /***footer***/
 #footer 
 {
-	background: #2d2d2d; color: #fff;
+	background: #2d2d2d; 
+	color: #fff;
 	text-align: center;
-	width: 70%;
-	margin-left: 15%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
 }
 
 #footer a{color: #FFA500; text-decoration: none;}
