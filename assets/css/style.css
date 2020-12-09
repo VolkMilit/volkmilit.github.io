@@ -1,33 +1,7 @@
 html, body
 {
-	font-family: sans, dejuvu-sans-book;
-	height: 96%; /*because fuck css*/
-}
-
-/* Startpage  Css
-By Dylan Araps */
-#menu ul
-{
-	display: block;
-	margin: 0 auto;
-	width: 77%;
-}
-		
-#menu li
-{
-	color: #FFA500;
-	display: inline-block;
-	font-size: 1.2em;
-	line-height: 1.5;
-	list-style: none;
-	margin: 5px;
-}
-		
-#menu a
-{
-	color: #2d2d2d;
-	text-decoration: none;
-	transition: .2s;
+    font-family: sans, dejuvu-sans-book;
+    height: 96%; /*because fuck css*/
 }
 
 /***content container***/
@@ -35,57 +9,12 @@ By Dylan Araps */
 
 #content
 {
-	width: 70%;
-	margin: 0 auto;
-	padding-top: 10px; 
-	background: #fff;
-	padding: 10px;
-	min-height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 10px; 
+    background: #fff;
+    padding: 10px;
+    min-height: 100%;
 }
 #content a{color: #777; text-decoration: none; transition: 0.3s;}
 #content a:hover{color: #FFA500;}
-#content a img{border: 3px solid #FFFFFF; transition: 0.3s;}
-#content a img:hover{border: 3px solid #FFA500;}
-#content .ava_img{width: 200px;}
-
-@media screen and (max-width: 800px){#header{padding-top: 5%;}} /*fix for 800x600 screens*/
-
-#header{font-size: 2em; color: #FFA500; padding-bottom: 10px;}
-#header .small{font-size: 0.4em; color: #C4C4C4;}
-#header a{color: #FFA500;}
-#header a:hover{color: #C57F00;}
-
-.smaller {font-size: 0.8em; color: #C4C4C4;}
-
-#table{display: flex;}
-#table .row01{margin-right: 20px; width: 80%;}
-#table .row02{margin-left: 20px; width: 20%;}
-#table .row1{margin-right: 10px;}
-#table .row2{margin-left: 10px;}
-
-p { text-align: justify; line-height: 1.5em; }
-
-.quote{ border-left: 2px solid #FFA500; padding-left: 8px; }
-
-/***footer***/
-#footer 
-{
-	background: #2d2d2d; 
-	color: #fff;
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	width: 100%;
-}
-
-#footer a{color: #FFA500; text-decoration: none;}
-#footer a:hover{color: #fff;}
-
-/*****************************/
-.center{text-align: center;}
-.center p{text-align: center;}
-/*elastic images -- makes images resize, when screen small*/
-.center img {max-width: 100%; height: auto; width: auto\9; /* ie8 */}
-.center iframe {max-width: 100%; padding-top: 100px; padding-bottom: 200px;}
-.resize{width: 50%; height: auto;}
-iframe {margin-top: -60px; margin-bottom: -50px} /*little duck tape for this youtube videos...*/
